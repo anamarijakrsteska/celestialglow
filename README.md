@@ -53,11 +53,11 @@ pip install -r requirements.txt
 ```
 
 ### *Generate Django Secret Key
-Run the following command in your terminal:
+**1.** Run the following command in your terminal:
 ```bash
 python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
 ```
-Copy the generated key into your `.env` file:
+**2.** Copy the generated key into your `.env` file:
 ```env
 DJANGO_SECRET_KEY=your_generated_key_here
 ```
@@ -71,7 +71,7 @@ $env:GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
  ```
 Google Calendar requires a Google Cloud project, the Calendar API, OAuth credentials, and a configured callback URL.
 
-**2.** Copy them into your `.env` file:
+**3.** Copy them into your `.env` file:
 ```env
 DJANGO_SECRET_KEY=your_generated_key_here
 
