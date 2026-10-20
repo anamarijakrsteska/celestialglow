@@ -1,7 +1,12 @@
 
-Django
+Django==6.1.2
 djangorestframework==3.18.3
 django-cors-headers
+
+gunicorn
+dj-database-url
+psycopg[binary]
+whitenoise
 
 google-api-python-client==2.201.0
 google-auth==2.62.0
