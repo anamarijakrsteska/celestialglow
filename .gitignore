@@ -1,0 +1,49 @@
+# Secrets
+.env
+.env.*
+!.env.example
+google_calendar_token.json
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Local database
+db.sqlite3
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# React / Node
+frontend/node_modules/
+frontend/dist/
+
+# Environment and IDE files
+.idea/
+.vscode/
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+token.json
+credentials.json
