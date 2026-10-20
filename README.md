@@ -118,12 +118,12 @@ Open the URL provided by Vite, usually http://localhost:5173/
 - **ChatGPT and Claude:** Assisted with technical troubleshooting, debugging, and improving the integration between the frontend and backend.
 
 ## To Improve
-- Add automated tests for booking validation and API endpoints.
-- Implement email notifications for booking confirmations and session reminders.
-- Expand booking management with cancellation and rescheduling.
+**Automated tests** — add automated tests for booking validation and API endpoints.
+**Cancellation and rescheduling** — expand the existing booking system.
+**Group bookings** — allow a single booking to accommodate more than one person.
+**Email notifications** — notify users about confirmations, cancellations, changes, and upcoming sessions.
 
 ## Images of the website
-
 <img width="333" height="155" alt="website_1" src="https://github.com/user-attachments/assets/83e42cfb-7016-444f-8a6d-3870b9cf67a6" />
 <img width="333" height="155" alt="website_2" src="https://github.com/user-attachments/assets/56b043fa-d1a6-477c-a229-c3e2a1cbaa8e" />
 <img width="333" height="155" alt="website_3" src="https://github.com/user-attachments/assets/c8ad2198-9556-429a-ab82-0ebab8637428" />
