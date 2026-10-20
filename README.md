@@ -119,8 +119,11 @@ Open the URL provided by Vite, usually http://localhost:5173/
 
 ## To Improve
 **Automated tests** — add automated tests for booking validation and API endpoints.
+
 **Cancellation and rescheduling** — expand the existing booking system.
+
 **Group bookings** — allow a single booking to accommodate more than one person.
+
 **Email notifications** — notify users about confirmations, cancellations, changes, and upcoming sessions.
 
 ## Images of the website
