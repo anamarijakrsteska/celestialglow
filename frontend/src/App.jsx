@@ -2,7 +2,7 @@
         import { useEffect, useState } from "react";
         import "./App.css";
 
-        const API_URL = "http://127.0.0.1:8000/api";
+        const API_URL = "https://celestialglow.onrender.com/api";
 
         function formatDate(dateString, options) {
             const date = new Date(dateString);
