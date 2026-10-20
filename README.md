@@ -124,11 +124,11 @@ Open the URL provided by Vite, usually http://localhost:5173/
 
 ## Images of the website
 
-<img width="333" height="133" alt="website_1" src="https://github.com/user-attachments/assets/83e42cfb-7016-444f-8a6d-3870b9cf67a6" />
-<img width="333" height="133" alt="website_2" src="https://github.com/user-attachments/assets/56b043fa-d1a6-477c-a229-c3e2a1cbaa8e" />
-<img width="333" height="133" alt="website_3" src="https://github.com/user-attachments/assets/c8ad2198-9556-429a-ab82-0ebab8637428" />
-<img width="333" height="133" alt="website_4" src="https://github.com/user-attachments/assets/f03b00ee-8f78-4f12-84e0-10a04829aac4" />
-<img width="333" height="133" alt="website_AITest_5" src="https://github.com/user-attachments/assets/26a87568-6a6c-44be-8429-579c27303341" />
-<img width="333" height="133" alt="website_AITest_6" src="https://github.com/user-attachments/assets/40af6ee5-ae22-4b35-adcd-1a049c49ef8d" />
-<img width="333" height="133" alt="website_AITest_7" src="https://github.com/user-attachments/assets/49858d45-4fda-448c-98a5-9fc16e20e87e" />
-<img width="333" height="133" alt="website_8" src="https://github.com/user-attachments/assets/f12fc439-1f19-4d92-85ec-d8671a502036" />
+<img width="333" height="155" alt="website_1" src="https://github.com/user-attachments/assets/83e42cfb-7016-444f-8a6d-3870b9cf67a6" />
+<img width="333" height="155" alt="website_2" src="https://github.com/user-attachments/assets/56b043fa-d1a6-477c-a229-c3e2a1cbaa8e" />
+<img width="333" height="155" alt="website_3" src="https://github.com/user-attachments/assets/c8ad2198-9556-429a-ab82-0ebab8637428" />
+<img width="333" height="155" alt="website_4" src="https://github.com/user-attachments/assets/f03b00ee-8f78-4f12-84e0-10a04829aac4" />
+<img width="333" height="155" alt="website_AITest_5" src="https://github.com/user-attachments/assets/26a87568-6a6c-44be-8429-579c27303341" />
+<img width="333" height="155" alt="website_AITest_6" src="https://github.com/user-attachments/assets/40af6ee5-ae22-4b35-adcd-1a049c49ef8d" />
+<img width="333" height="155" alt="website_AITest_7" src="https://github.com/user-attachments/assets/49858d45-4fda-448c-98a5-9fc16e20e87e" />
+<img width="333" height="155" alt="website_8" src="https://github.com/user-attachments/assets/f12fc439-1f19-4d92-85ec-d8671a502036" />
