@@ -6,6 +6,7 @@
 **Celestial Glow** is a stargazing session booking application built with React and Django. 
 Visitors can explore available sessions, book a unique time slot, and receive a personalized AI-generated booking confirmation. 
 Google Calendar integration helps identify and handle scheduling conflicts.
+**Live Website:** https://celestialglow-frontend.onrender.com
 
 ## Features
 - **Session availability:** View upcoming stargazing sessions and their durations.
@@ -19,9 +20,10 @@ Google Calendar integration helps identify and handle scheduling conflicts.
 ## Tech Stack
 - **Frontend:** React, JavaScript, Vite, HTML, CSS
 - **Backend:** Python, Django, Django REST Framework
-- **Database:** SQLite
+- **Database:** PostgreSQL
 - **Calendar integration:** Google Calendar API and OAuth 2.0
 - **AI integration:** Google Gemini API
+- **Deployment:** Render
 
 ## Project Structure
 ```bash
@@ -32,6 +34,7 @@ celestialglow/
 ├── manage.py
 ├── requirements.txt
 ├── .gitignore
+├── build.sh  
 └── README.md
 ```
 
