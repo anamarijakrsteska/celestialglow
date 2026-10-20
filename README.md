@@ -69,9 +69,8 @@ DJANGO_SECRET_KEY=your_generated_key_here
 ```bash
 $env:GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
  ```
-Google Calendar requires a Google Cloud project, the Calendar API, OAuth credentials, and a configured callback URL.
-
-**3.** Copy them into your `.env` file:
+**3.** Google Calendar requires a Google Cloud project, the Calendar API, OAuth credentials, and a configured callback URL.
+Copy them into your `.env` file:
 ```env
 DJANGO_SECRET_KEY=your_generated_key_here
 
