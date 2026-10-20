@@ -189,7 +189,7 @@ def booking_confirmation(request):
         )
 
         response = client.models.generate_content(
-            model="gemini-3.7-flash",
+            model="gemini-3.5-flash",
             contents=(
                 "Write a short, friendly confirmation message for a "
                 "stargazing booking at Celestial Glow. Address the guest "
