@@ -36,6 +36,13 @@
 }
 
     /* ---------- Navigation ---------- */
+    .navbar {
+      display: flex;/*y6t5cv*/
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+
     .brand-logo {
       display: block;
       width: 208px;
@@ -44,23 +51,17 @@
     }
     @media (max-width: 600px) {
       .brand-logo {
-        width: 150px;
+        width: 155px;
       }
     }
 
-    .navbar {
-      display: flex;/*y6t5cv*/
-      align-items: center;
-      justify-content: space-between;
-      position: relative;
-    }
-    @media (max-width: 600px) {
+    @media (max-width: 550px) {
         .navbar {
-            padding: 16px 5%;
+            padding: 15px 5%;
             gap: 12px;
         }
         .brand-logo {
-            width: 120px;
+            width: 150px;
         }
 
         .navbar nav {
@@ -69,11 +70,30 @@
         }
     }
 
-    .menu-toggle {
-    display: none;
-}
+    .nav-items a{
+        font-family: 'Cormorant SC', sans-serif;
+        font-weight:bold;
+        font-size: 18px;
+        padding-left:9px;
+    }
 
-@media (max-width: 1350px) {
+    .navbar nav {
+        display: flex;
+        gap: 32px;
+        color: #C4C7D0;
+        font-size: 12px;
+    }
+    .navbar nav a:hover, .text-button:hover {
+        color: var(--gold);
+        transition: color 0.25s ease;
+    }
+
+/* ---------- Hamburger Button ---------- */
+    .menu-toggle {
+        display: none;
+    }
+
+    @media (max-width: 1350px) {
     .menu-toggle {
         display: block;
         background: none;
@@ -99,25 +119,6 @@
         z-index: 10;
     }
 }
-
-    .nav-items a{
-        font-family: 'Cormorant SC', sans-serif;
-        font-weight:bold;
-        font-size: 18px;
-        padding-left:9px;
-    }
-
-    .navbar nav {
-        display: flex;
-        gap: 32px;
-        color: #C4C7D0;
-        font-size: 12px;
-    }
-    .navbar nav a:hover, .text-button:hover {
-        color: var(--gold);
-        transition: color 0.25s ease;
-    }
-
     /* ---------- Hero Content ---------- */
     .hero-content {
         width: 100%;
@@ -129,14 +130,14 @@
     }
 
     .hero-content .title{
-        font-size: 13.8px;
+        font-size: clamp(10px, 5vw, 15px);
         text-align: left;
         display: flex;
         color: #D7B55C;
         letter-spacing: 3.1px;
     }
     .hero h1 {
-        font-size: clamp(38px, 6vw, 78px);
+        font-size: clamp(35px, 5vw, 78px);
         color: #F7F7FF;
         text-align: left;
         letter-spacing: -1.3px;
@@ -145,7 +146,7 @@
         margin: 8px 0px;
     }
     .hero-content .hero-description {
-      font-size: 17px;
+        font-size: clamp(15px, 5vw, 18px);
     }
 
     .hero-actions {
@@ -616,6 +617,17 @@
         color: #FFF0C3;
     }
 
+    @media (max-width: 600px) {
+    .session-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .session-card {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
     .modal-backdrop {
       position: fixed;
       inset: 0;
@@ -686,6 +698,7 @@
         line-height: 1.9;
     }
 
+
 /* --------------------- FOOTER --------------------- */
 .footer {
     display: flex;
@@ -719,6 +732,26 @@
         font-size: 11px;
         transition: color 180ms;
     }
+
+
+    @media (max-width: 550px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 20px 5%;
+        text-align: center;
+    }
+
+    .footer .brand-logo-footer {
+        width: min(180px, 100%);
+        height: auto;
+    }
+
+    .footer .contact {
+        text-align: center;
+    }
+}
 
 /* --------------------- Shared Typography --------------------- */
 .hero h1, .section h2, .about-section h2, .booking-modal h2 {
