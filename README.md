@@ -1,4 +1,4 @@
-<img width="1896" height="861" alt="website_8" src="https://github.com/user-attachments/assets/d0829b67-7a11-4cc2-84c6-0a132236163e" /><img width="500" height="215" alt="CelestialGlow_logo" src="https://github.com/user-attachments/assets/f461d2cb-42aa-4581-8999-6ecc64185fb9" />
+<img width="500" height="215" alt="CelestialGlow_logo" src="https://github.com/user-attachments/assets/f461d2cb-42aa-4581-8999-6ecc64185fb9" />
 
 # Celestial Glow
 **A LITTLE CLOSER TO INFINITY**
