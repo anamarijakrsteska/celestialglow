@@ -38,6 +38,7 @@
         }
 
         function App() {
+            const [menuOpen, setMenuOpen] = useState(false);
             useEffect(() => {
                 const interval = setInterval(() => {
                     const now = Date.now();
@@ -280,17 +281,21 @@
             return (
                 <div className="app">
                       <main>
-
                           <section className="hero" id="home">
                               <header className="navbar">
                                   <a href="#home">
                                       <img className="brand-logo" src="/images/logo.png" alt="CelestialGlow" />
                                   </a>
-                                  <nav className="nav-items">
-                                      <a href="#home">Home</a>
-                                      <a href="#calendar">Calendar</a>
-                                      <a href="#experiences">Experiences</a>
-                                      <a href="#about">Our Universe</a>
+
+                                   <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+                                       ☰
+                                   </button>
+
+                                  <nav className={`nav-items ${menuOpen ? "open" : ""}`}>
+                                      <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
+                                      <a href="#calendar" onClick={() => setMenuOpen(false)}>Calendar</a>
+                                      <a href="#experiences" onClick={() => setMenuOpen(false)}>Experiences</a>
+                                      <a href="#about" onClick={() => setMenuOpen(false)}>Our Universe</a>
                                   </nav>
                               </header>
 
