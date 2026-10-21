@@ -10,43 +10,51 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+# Importing libraries
 import os
 import dj_database_url
 from pathlib import Path
 from dotenv import load_dotenv
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-load_dotenv(BASE_DIR / ".env")
 
+BASE_DIR = Path(__file__).resolve().parent.parent # Finding the main project directory
+load_dotenv(BASE_DIR / ".env") # Loading environment variables from the project's .env file
+
+# Reading Google OAuth credentials
 GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
 GOOGLE_CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET")
 GOOGLE_REDIRECT_URI = os.getenv("GOOGLE_REDIRECT_URI")
 
+# Reads Django's secret key
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
+
+# Stops execution if the key is missing
 if not SECRET_KEY:
     raise ValueError("DJANGO_SECRET_KEY is missing.")
 
+# Stops execution if either credential is missing
 if not GOOGLE_CLIENT_ID or not GOOGLE_CLIENT_SECRET:
     raise ValueError("Google OAuth credentials are missing.")
 
+# Stops execution if the URL is missing
 if not GOOGLE_REDIRECT_URI:
     raise ValueError("GOOGLE_REDIRECT_URI is missing.")
 
+# Configuring media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
-
+# Disabling Django's debug mode for production
 DEBUG = False
 
+# Configuring allowed hosts
 ALLOWED_HOSTS = [
-    host.strip()
-    for host in os.getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
-    if host.strip()
+    host.strip() # Removes whitespace around each hostname
+    for host in os.getenv("DJANGO_ALLOWED_HOSTS", "").split(",") # Reads and splits hostnames separated by commas
+    if host.strip()  # Excludes empty hostnames from the list
 ]
+
+# Stops execution if no allowed hosts are configured
 if not DEBUG and not ALLOWED_HOSTS:
     raise ValueError("DJANGO_ALLOWED_HOSTS must be configured.")
 
@@ -61,14 +69,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'celestialglowapp',
-    'rest_framework',
-    'corsheaders',
+    'rest_framework',  # Adds Django REST Framework for building APIs
+    'corsheaders', # Allows configuring Cross-Origin Resource Sharing (CORS).
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    "whitenoise.middleware.WhiteNoiseMiddleware",
-    'corsheaders.middleware.CorsMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware", # Serves static files in production.
+    'corsheaders.middleware.CorsMiddleware', # Manages cross-origin requests between the frontend and backend.
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -133,14 +141,13 @@ LANGUAGE_CODE = 'en-us'
 
 USE_I18N = True
 
-STATIC_URL = "/static/"
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_URL = "/static/"  # Defines the URL prefix for static files
+STATIC_ROOT = BASE_DIR / "staticfiles"   # Defines where collected static files are stored
 
+TIME_ZONE = "Europe/Skopje" # Sets the project's default time zone to Skopje
+USE_TZ = True # Enables time-zone-aware date and time handling.
 
-TIME_ZONE = "Europe/Skopje"
-USE_TZ = True
-
-
+# Specifies which frontend origins are allowed to make cross-origin requests to the Django backend
 CORS_ALLOWED_ORIGINS = [
     origin.strip()
     for origin in os.getenv(
@@ -150,8 +157,7 @@ CORS_ALLOWED_ORIGINS = [
     if origin.strip()
 ]
 
-
-
+# Specifies which origins Django trusts for requests protected by CSRF security checks (help Django validate certain requests securely)
 CSRF_TRUSTED_ORIGINS = [
     origin.strip()
     for origin in os.getenv(
@@ -160,7 +166,6 @@ CSRF_TRUSTED_ORIGINS = [
     ).split(",")
     if origin.strip()
 ]
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
