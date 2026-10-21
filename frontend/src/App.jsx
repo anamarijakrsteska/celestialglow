@@ -294,11 +294,29 @@
                                   </nav>
                               </header>
 
+                              <div className="hero-content">
+                                  <p className="title">
+                                     SOMEWHERE BETWEEN EARTH AND INFINITY
+                                  </p>
+
+                                  <h1>
+                                    Your Window to the <br/><em>Universe.</em>
+                                  </h1>
+
+                                  <p className="hero-description">
+                                    Discover the night sky. Experience the extraordinary.<br/>
+                                  </p>
+
+                                  <div className="hero-actions">
+                                      <a className="primary-button" href="#experiences">
+                                        Explore Sessions  ➜
+                                      </a>
+                                  </div>
+                              </div>
 
                               <div className="hero-bottom">
                                 <span>
-                                      SOMEWHERE BETWEEN <br/>
-                                      EARTH AND INFINITY
+                                    A LITTLE CLOSER TO INFINITY
                                 </span>
                                 <span>
                                       MADE FOR THE CURIOUS
@@ -585,9 +603,9 @@
                                                  </span>
                                              </div>
 
-                                             <h3 style={{fontFamily: "'Cormorant SC', sans-serif" }}>Through the Night Sky</h3>
+                                             <h3 style={{fontFamily: "'Cormorant SC', serif" }}>Through the Night Sky</h3>
 
-                                             <p style={{ fontSize: "15px", fontFamily: "'Cormorant SC', sans-serif",  color: "#d7b55c" }}>
+                                             <p style={{ fontSize: "15px", fontFamily: "'Cormorant SC', serif",  color: "#d7b55c" }}>
                                                  Celestial Encounter
                                              </p>
 
@@ -651,7 +669,14 @@
                           <a href="#home">
                               <img className="brand-logo-footer" src="/images/logo.png" alt="Celestial Glow"/>
                           </a>
+
                           <span>© 2026 Celestial Glow</span>
+
+                          <ul className="contact">
+                              <li><a><b>Email:</b> celestialglow@gmail.com</a></li>
+                              <li><a><b>Phone:</b> +888 88 888 888</a></li>
+                          </ul>
+
                       </footer>
 
 
@@ -758,7 +783,6 @@
                                           disabled={bookingLoading}
                                         >
                                         {bookingLoading ? "Reserving...✦" : "Confirm reservation"}
-                                        {!bookingLoading && <span></span>}
                                          </button></p>
                                          <br/>
                                     </form>
