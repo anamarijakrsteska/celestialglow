@@ -305,7 +305,7 @@
                                   </p>
 
                                   <h1>
-                                    Your Window to the <br/><em>Universe.</em>
+                                    Your Window to the <em>Universe.</em>
                                   </h1>
 
                                   <p className="hero-description">
