@@ -347,6 +347,7 @@
                                   <div className="calendar-panel-heading">
 
                                       <div>
+                                          <span style = {{ fontSize: "15px", color: "#d7b55c", }}> ✦ </span>
                                           <span className="calendar-eyebrow">
                                               CELESTIAL GLOW
                                           </span>
