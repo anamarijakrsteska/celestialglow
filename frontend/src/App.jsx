@@ -1,5 +1,4 @@
-
-        import { useEffect, useState } from "react";
+ import { useEffect, useState } from "react";
         import "./App.css";
 
         const API_URL = "https://celestialglow.onrender.com/api";
@@ -347,18 +346,7 @@
                               <div className="calendar-panel">
                                   <div className="calendar-panel-heading">
 
-
-                                      <a>
-                                           <img
-                                                src="/images/logo_calendar.png"
-                                                alt="Celestial Glow logo"
-                                                className="calendar-logo"
-                                                style = {{ height: "75px", width: "auto" }}
-                                           />
-
-                                      </a>
-
-                                      <div style= {{marginLeft: "-10%", }}>
+                                      <div>
                                           <span className="calendar-eyebrow">
                                               CELESTIAL GLOW
                                           </span>
@@ -366,18 +354,15 @@
                                           <p>Find your next journey through the night sky.</p>
                                       </div>
 
+                                      <a>
+                                           <img
+                                                src="/images/logo_calendar.png"
+                                                alt="Celestial Glow logo"
+                                                className="calendar-logo"
+                                                style = {{ height: "55px", width: "auto" }}
+                                           />
 
-
-                                      <button
-                                          className="calendar-refresh"
-                                          onClick={() => {
-                                             setLoading(true);
-                                             fetchSessions();
-                                          }}
-                                          aria-label="Refresh sessions"
-                                          title="Refresh sessions">
-                                        ↻
-                                      </button>
+                                      </a>
                                   </div>
 
                                   {loading && (

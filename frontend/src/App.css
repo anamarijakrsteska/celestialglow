@@ -26,7 +26,7 @@
 
 /* --------------------- HERO  --------------------- */
 .hero {
-    background: linear-gradient(rgba(5, 10, 25, 38%), rgba(5, 10, 25, 15.5%)),
+    background: linear-gradient(rgba(5, 10, 25, 18%), rgba(5, 10, 25, 8%)),
                url("/images/earthNasa.jpg") center 12%/ cover no-repeat;
     min-height: 695px;
     padding: 25px 7% 83px 38px;
@@ -217,6 +217,9 @@
     }
     .calendar-panel-heading {
         margin-bottom: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+
     }
     .calendar-eyebrow {
         display: block;
