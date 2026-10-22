@@ -26,10 +26,10 @@
 
 /* --------------------- HERO  --------------------- */
 .hero {
-    background: linear-gradient(rgba(5, 10, 25, 18%), rgba(5, 10, 25, 8.5%)),
-               url("/images/earthNasa.jpg") center 15%/ cover no-repeat;
+    background: linear-gradient(rgba(5, 10, 25, 38%), rgba(5, 10, 25, 15.5%)),
+               url("/images/earthNasa.jpg") center 12%/ cover no-repeat;
     min-height: 695px;
-    padding: 25px 3.5% 80px 35px;
+    padding: 25px 7% 83px 38px;
     border-bottom: 1px solid rgb(215 182 108 / 12%);
     position: relative;/*ok.;m*/
 }
@@ -44,18 +44,17 @@
 
     .brand-logo {
       display: block;
-      width: 208px;
+      width: 188px;
       height: auto;
       border: 3px solid rgb(52 125 158 / 12%);
     }
 
     @media (max-width: 550px) {
         .navbar {
-            padding: 15px 5%;
             gap: 12px;
         }
         .brand-logo {
-            width: 180px;
+            width: 138px;
         }
 
         .navbar nav {
@@ -68,7 +67,7 @@
         font-family: 'Cormorant SC', sans-serif;
         font-weight:bold;
         font-size: 18px;
-        padding-left:9px;
+        padding-left: 10px;
     }
 
     .navbar nav {
@@ -79,7 +78,7 @@
     }
     .navbar nav a:hover, .text-button:hover {
         color: var(--gold);
-        transition: color 0.25s ease;
+        transition: color 0.35s ease;
     }
 
 /* ---------- Hamburger Button ---------- */
@@ -137,7 +136,7 @@
         letter-spacing: -1.3px;
         line-height: .98;
         max-width: 700px;
-        margin: 11px 0px;
+        margin: 13px 0px;
     }
     .hero-content .hero-description {
         font-size: clamp(15px, 5vw, 18px);
@@ -707,7 +706,7 @@
 }
 .footer .brand-logo-footer {
     height: 88px;
-    width: 215px;
+    width: 212px;
     }
 
 .footer .contact{
@@ -727,18 +726,17 @@
         transition: color 180ms;
     }
 
-
     @media (max-width: 550px) {
     .footer {
         flex-direction: column;
         align-items: center;
         gap: 8px;
-        padding: 20px 5%;
+        padding: 10.5px 5%;
         text-align: center;
     }
 
     .footer .brand-logo-footer {
-        width: min(180px, 100%);
+        width: min(175px, 100%);
         height: auto;
     }
 

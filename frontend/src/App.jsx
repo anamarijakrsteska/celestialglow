@@ -284,7 +284,7 @@
                           <section className="hero" id="home">
                               <header className="navbar">
                                   <a href="#home">
-                                      <img className="brand-logo" src="/images/logo.png" alt="CelestialGlow" />
+                                      <img className="brand-logo" src="/images/logo_bold.png" alt="CelestialGlow" />
                                   </a>
 
                                    <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
@@ -314,7 +314,7 @@
 
                                   <div className="hero-actions">
                                       <a className="primary-button" href="#experiences">
-                                        Explore Sessions  ➜
+                                        Explore Sessions ➜
                                       </a>
                                   </div>
                               </div>
