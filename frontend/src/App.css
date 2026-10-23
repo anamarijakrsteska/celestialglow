@@ -190,7 +190,7 @@
 /* --------------------- CALENDAR --------------------- */
     .calendar-panel {
         width: 100%;
-        max-width: 820px;
+        max-width: 720px;
         margin: 0 auto;
         padding: 20px;
         /*Best blue colors
@@ -202,7 +202,34 @@
         border-radius: 14px;
         color: #f3ebdd;
     }
+    @media (max-width: 550px) {
+        .calendar-panel {
+            height: auto;
+            max-height: none;
+            padding: 12px;
+        }
 
+        .calendar-day {
+            min-height: 42px;
+            padding: 4px 1px;
+            gap: 2px;
+        }
+
+         .calendar-day-number {
+        width: 22px;
+        height: 22px;
+        font-size: 0.72rem;
+        }
+
+        .calendar-weekday {
+            padding: 5px 1px;
+        }
+
+        .calendar-selected-date {
+            margin-top: 12px;
+            padding-top: 10px;
+        }
+    }
 
     .eyebrow {
         color: var(--gold);
@@ -468,7 +495,7 @@
         white-space: nowrap;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 300px) {
         .calendar-panel {
             padding: 12px;
         }
